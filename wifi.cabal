@@ -1,0 +1,38 @@
+name:                wifi
+version:             0.2.0.2
+synopsis:            wrapper around macOS's `networksetup` to set airport on|off
+description:         Please see README.md
+homepage:            https://github.com/rimbaudcode/wifi#readme
+license:             BSD3
+license-file:        LICENSE
+author:              art rimbaud
+maintainer:          rimbaud1854(dot)91[At]gmail(DOT)com
+copyright:           Copyright: (c) 2016 rimbaudcode
+category:            value
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable wifi
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  other-modules:       AirPort.Power
+  build-depends:       base >= 4.7 && < 5
+                     , process >= 1.2 && < 1.3
+  ghc-options:       -fdefer-type-errors
+                     -fforce-recomp
+                     -fobject-code
+                     -funbox-strict-fields
+                     -fwarn-implicit-prelude
+                     -fwarn-incomplete-patterns
+                     -fwarn-incomplete-record-updates
+                     -fwarn-incomplete-uni-patterns
+                     -fwarn-missing-signatures
+                     -fwarn-monomorphism-restriction
+                     -fwarn-name-shadowing
+                     -fwarn-orphans
+                     -fwarn-overlapping-patterns
+                     -fwarn-tabs
+                     -fwarn-unused-do-bind
+                     -fwarn-unused-imports
+                     -Wall
