@@ -1,5 +1,5 @@
 name:                wifi
-version:             0.2.0.2
+version:             0.2.0.3
 synopsis:            wrapper around macOS's `networksetup` to set airport on|off
 description:         Please see README.md
 homepage:            https://github.com/rimbaudcode/wifi#readme
@@ -36,3 +36,6 @@ executable wifi
                      -fwarn-unused-do-bind
                      -fwarn-unused-imports
                      -Wall
+                     -O2
+                     -threaded
+                     -fprof-auto
