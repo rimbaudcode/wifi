@@ -1,3 +1,5 @@
+{-# LANGUAGE ApplicativeDo #-}
+
 module AirPort.Power
   ( PowerState
   , getPowerState
@@ -5,9 +7,10 @@ module AirPort.Power
   , togglePowerState
   ) where
 
-import           Data.List      (isInfixOf)
-import           Prelude
-import           System.Process (readProcess)
+import Data.List      (isInfixOf)
+import Prelude        (Eq, FilePath, IO, Show, String, otherwise, show, (<$>),
+                       (==))
+import System.Process (readProcess)
 
 data PowerState = On | Off deriving (Eq, Show)
 
