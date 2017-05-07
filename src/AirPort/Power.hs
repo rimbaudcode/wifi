@@ -1,5 +1,3 @@
-{-# LANGUAGE ApplicativeDo #-}
-
 module AirPort.Power
   ( PowerState
   , getPowerState

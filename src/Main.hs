@@ -1,5 +1,3 @@
-{-# LANGUAGE ApplicativeDo #-}
-
 module Main (main) where
 
 import AirPort.Power (getPowerState, setPowerState, togglePowerState)
