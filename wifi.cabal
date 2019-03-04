@@ -18,7 +18,7 @@ executable wifi
   default-language:    Haskell2010
   other-modules:       AirPort.Power
   build-depends:       base >= 4.7 && < 5
-                     , process >= 1.4 && < 1.5
+                     , process >= 1.6 && < 1.7
   ghc-options:       -fdefer-type-errors
                      -fforce-recomp
                      -fobject-code
